@@ -8,11 +8,11 @@
 
 import Cocoa
 
-class InterfaceViewController: NSViewController {
-
+class InterfaceViewController: NSViewController, NSTouchBarDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        print("View Loaded!")
     }
-    
 }
