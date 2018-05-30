@@ -57,69 +57,6 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="File" id="dMs-cI-mzQ">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="File" id="bib-Uj-vzu">
-                                    <items>
-                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                            <connections>
-                                                <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
-                                            <connections>
-                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open Recent" id="tXI-mr-wws">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
-                                                <items>
-                                                    <menuItem title="Clear Menu" id="vNY-rz-j42">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="clearRecentDocuments:" target="Ady-hI-5gd" id="Daa-9d-B3U"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
-                                        <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
-                                            <connections>
-                                                <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
-                                            <connections>
-                                                <action selector="saveDocument:" target="Ady-hI-5gd" id="teZ-XB-qJY"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
-                                            <connections>
-                                                <action selector="saveDocumentAs:" target="Ady-hI-5gd" id="mDf-zr-I0C"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Revert to Saved" keyEquivalent="r" id="KaW-ft-85H">
-                                            <connections>
-                                                <action selector="revertDocumentToSaved:" target="Ady-hI-5gd" id="iJ3-Pv-kwq"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
-                                        <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
-                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="runPageLayout:" target="Ady-hI-5gd" id="Din-rz-gC5"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
-                                            <connections>
-                                                <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="View" id="H8h-7b-M4v">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="View" id="HyV-fh-RgO">
@@ -137,18 +74,6 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
-                                        <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="dU3-MA-1Rq"/>
-                                            </connections>
-                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -246,7 +171,8 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="aK0-RR-q4S" kind="show" id="rsW-PT-HRc"/>
+                                    <action selector="StartClicked:" target="XfG-lQ-9wD" id="CrI-3d-siA"/>
+                                    <segue destination="Yh2-EW-Sfe" kind="show" id="OrB-pP-4uM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -257,50 +183,40 @@
                             <constraint firstItem="xuy-Wp-2Ge" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="sae-xW-wHl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="StartClicked" destination="CgF-2d-MKv" id="IVK-e4-KgI"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="119" y="654"/>
         </scene>
-        <!--Interface View Controller-->
-        <scene sceneID="MIQ-9J-nJP">
+        <!--Window Controller-->
+        <scene sceneID="f3C-bz-fP9">
             <objects>
-                <viewController id="aK0-RR-q4S" customClass="InterfaceViewController" customModule="Data_Rush" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="fIx-pF-u75">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
+                <windowController id="Yh2-EW-Sfe" customClass="InterfaceWindowController" customModule="Data_Rush" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" identifier="interface" title="Interface" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="4Oo-ay-Ees">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="479" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <connections>
+                            <outlet property="delegate" destination="Yh2-EW-Sfe" id="thS-IF-Eme"/>
+                        </connections>
+                    </window>
                     <touchBar key="touchBar" id="GF7-vf-RyF">
                         <touchBarItems>
-                            <touchBarItem id="d3K-le-9X9">
-                                <viewController key="viewController" id="NAY-bq-IhX">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QeA-qu-gDl">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mZz-8a-hAA">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="AddClicked:" target="aK0-RR-q4S" id="8MF-ne-aeX"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="72" height="30"/>
-                            </touchBarItem>
-                            <touchBarItem id="PKV-2D-pwA">
-                                <viewController key="viewController" id="9ns-rV-l9B">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-1J-x0r">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="Destroy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="InS-l1-J2K">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="90" height="30"/>
-                            </touchBarItem>
+                            <touchBarPopoverItem identifier="add" customizationLabel="Add" collapsedRepresentationLabel="Add" id="hOx-6w-sGT">
+                                <touchBar key="popoverTouchBar" id="QzF-fo-NTj">
+                                    <touchBarItems>
+                                        <touchBarPopoverItem identifier="addBots" collapsedRepresentationLabel="Bots" id="EW0-0b-qTA">
+                                            <touchBar key="popoverTouchBar" id="c4R-Yw-LoF">
+                                                <nil name="touchBarItems"/>
+                                            </touchBar>
+                                        </touchBarPopoverItem>
+                                    </touchBarItems>
+                                </touchBar>
+                            </touchBarPopoverItem>
                             <touchBarItem id="xAk-nV-2hH">
                                 <viewController key="viewController" id="afE-YQ-o18">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-g5-mAe">
@@ -310,16 +226,35 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" usesAppearanceFont="YES"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="StatsClicked:" target="Yh2-EW-Sfe" id="ya0-pY-9dR"/>
+                                        </connections>
                                     </button>
                                 </viewController>
                                 <size key="designTimeSize" width="72" height="30"/>
                             </touchBarItem>
                         </touchBarItems>
                     </touchBar>
-                </viewController>
-                <customObject id="HpZ-45-HN7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <segue destination="Cs6-Uq-Kjn" kind="relationship" relationship="window.shadowedContentViewController" id="3Xt-cj-FGI"/>
+                    </connections>
+                </windowController>
+                <customObject id="LMv-9w-7Dm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1051"/>
+            <point key="canvasLocation" x="92" y="1158"/>
+        </scene>
+        <!--Interface View Controller-->
+        <scene sceneID="H16-mc-NQt">
+            <objects>
+                <viewController id="Cs6-Uq-Kjn" customClass="InterfaceViewController" customModule="Data_Rush" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="BJ4-rp-69Z">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="dJC-XK-QEm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="1054"/>
         </scene>
     </scenes>
 </document>
