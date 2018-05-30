@@ -11,6 +11,7 @@
 		B215993920BF1F0100A1EF82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B215993820BF1F0100A1EF82 /* ViewController.swift */; };
 		B215993B20BF1F0300A1EF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B215993A20BF1F0300A1EF82 /* Assets.xcassets */; };
 		B215993E20BF1F0300A1EF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B215993C20BF1F0300A1EF82 /* Main.storyboard */; };
+		B215994720BF215C00A1EF82 /* InterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B215994620BF215C00A1EF82 /* InterfaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B215993D20BF1F0300A1EF82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B215993F20BF1F0300A1EF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B215994020BF1F0300A1EF82 /* Data_Rush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Data_Rush.entitlements; sourceTree = "<group>"; };
+		B215994620BF215C00A1EF82 /* InterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B215993820BF1F0100A1EF82 /* ViewController.swift */,
 				B215993A20BF1F0300A1EF82 /* Assets.xcassets */,
 				B215993C20BF1F0300A1EF82 /* Main.storyboard */,
+				B215994620BF215C00A1EF82 /* InterfaceViewController.swift */,
 				B215993F20BF1F0300A1EF82 /* Info.plist */,
 				B215994020BF1F0300A1EF82 /* Data_Rush.entitlements */,
 			);
@@ -135,6 +138,7 @@
 			files = (
 				B215993920BF1F0100A1EF82 /* ViewController.swift in Sources */,
 				B215993720BF1F0100A1EF82 /* AppDelegate.swift in Sources */,
+				B215994720BF215C00A1EF82 /* InterfaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
