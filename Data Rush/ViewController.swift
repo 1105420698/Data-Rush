@@ -10,17 +10,19 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var StatsG: NSColorWell!
+    
+    @IBOutlet weak var RequestG: NSTextField!
+    
+    @IBOutlet weak var BotsG: NSTextField!
+    
+    @IBOutlet weak var ResultsG: NSTextField!
+    
+    @IBOutlet weak var PacketG: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+        // Do view setup here.
     }
     
 }
-
